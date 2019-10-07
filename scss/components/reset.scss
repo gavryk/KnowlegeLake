@@ -1,0 +1,51 @@
+//Variables-----------------------------
+
+$link_btn-col: #00c3bb;
+$form_btn-col: #ffc000;
+$main_col: #08477a;
+$text_col: #808080;
+
+
+//---------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  @include box-sizing(border-box);
+  font-family: source_sans, sans-serif;
+  color: $main_col;
+  font-size: 15px;
+}
+p {
+  color: $text_col;
+  font-size: 15px;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 96%;
+  width: 1430px;
+}
+
+a {
+  color: $text_col;
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
