@@ -378,41 +378,40 @@ header .row {
     #advantages .advantage_title span {
       font-family: OpenSans, sans-serif;
       font-weight: 400; }
-
-.advantage_items {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: space-between; }
-  .advantage_items .item {
-    -webkit-flex-basis: 25%;
-    -moz-flex-basis: 25%;
-    -ms-flex-basis: 25%;
-    flex-basis: 25%;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 50px 45px 75px 45px; }
-    .advantage_items .item .item_title {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      -ms-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      margin-bottom: 45px; }
-      .advantage_items .item .item_title h3 {
-        font-size: 22px;
-        margin-left: 40px; }
+  #advantages .advantage_items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between; }
+    #advantages .advantage_items .item {
+      -webkit-flex-basis: 25%;
+      -moz-flex-basis: 25%;
+      -ms-flex-basis: 25%;
+      flex-basis: 25%;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 50px 45px 75px 45px; }
+      #advantages .advantage_items .item .item_title {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 45px; }
+        #advantages .advantage_items .item .item_title h3 {
+          font-size: 22px;
+          margin-left: 40px; }
 
 #platforms {
   background-color: #182737;
