@@ -1,7 +1,231 @@
-@import "/components/fonts";
-@import "/components/reset";
-@import "/components/rwd";
-@import "/components/mixins";
+@import "components/mixins";
+@import "components/reset";
+@import "components/fonts";
+@import "components/rwd";
 //-----------------------------------
 @import "header";
 @import "footer";
+
+
+#banner {
+  padding: 70px 0;
+  .row {
+    @include flex-box();
+    @include justify-content(space-between);
+    @include align-items(center);
+  }
+}
+
+#migration_decr {
+  padding: 90px 0;
+  .about_asking {
+    width: 64%;
+    margin: 0 auto 110px auto;
+    box-shadow: 0 5px 25px 1px #83b9eb;
+    border-radius: 10px;
+    text-align: center;
+    padding: 55px 145px;
+    line-height: 27px;
+  }
+  .migration_content {
+    margin-bottom: 80px;
+    h2 {
+      text-align: left;
+    }
+    .content_paragraph {
+      margin-bottom: 35px;
+      p {
+        line-height: 27px;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    a {
+      display: inline-block;
+      color: #fff;
+      font-size: 16px;
+      padding: 15px 30px;
+      background-color: $link_btn-col;
+      border-radius: 5px;
+      font-weight: bold;
+      @include transition(all, .2s);
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+  .largest_projects {
+    .projects_items {
+      @include flex-box();
+      @include justify-content(space-between);
+      @include align-items(center);
+      align-items: baseline;
+      .item {
+        @include flex-box();
+        @include flex-basis(27%);
+        padding: 28px 35px 0 35px;
+        border: 1px solid #caeaf5;
+        border-radius: 10px;
+        .doc_count {
+          width: 40%;
+          @include flex-box();
+          @include flex-direction(column);
+          font-family: OpenSans-semibold,sans-serif;
+          font-size: 22px;
+          color: #4d91de;
+          padding-bottom: 75px;
+          .num {
+            font-size: 37px;
+          }
+        }
+        .company_name {
+          width: 60%;
+          h3 {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#advantages {
+  background-color: #4d91de;
+  padding: 65px 0;
+  .advantage_title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+    h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    span {
+      font-family: OpenSans, sans-serif;
+      font-weight: 400;
+    }
+  }
+}
+.advantage_items {
+  @include flex-box();
+  @include justify-content(space-between);
+  .item {
+    @include flex-basis(25%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px 45px 75px 45px;
+    .item_title {
+      @include flex-box();
+      @include align-items(center);
+      margin-bottom: 45px;
+      h3 {
+        font-size: 22px;
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
+#platforms {
+  background-color: #182737;
+  padding: 110px 0 75px 0;
+  h2 {
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  .platforms_item {
+    @include flex-box();
+    @include justify-content(space-between);
+    text-align: center;
+    .item {
+      @include flex-basis(19%);
+      background-color: #fff;
+      padding: 50px 35px 40px 35px;
+      border-radius: 10px;
+      img {
+        margin-bottom: 30px;
+      }
+      h3 {
+        margin-bottom: 45px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 55px;
+      }
+      a {
+        display: inline-flex;
+        width: 90%;
+        @include justify-content(center);
+        padding: 15px;
+        background-color: $form_btn-col;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 10px;
+        @include transition(all, .2s);
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+
+//-------------------------------------------------------------------------------------------
+/*                         ROBOTIC PROCESSES AUTOMATION                                */
+//+============================================================================================
+
+#rpa {
+  padding: 130px 0 155px 0;
+  .video_wrapper {
+    .row_1140 {
+      @include flex-box();
+      @include justify-content(space-between);
+      @include align-items(center);
+      .rpa_wrapper {
+         @include flex-basis(50%);
+      }
+      .rpa_text {
+        h2 {
+          text-align: left;
+        }
+        p {
+          padding-right: 25px;
+        }
+      }
+      .rpa_video {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .benefits_wrapper {
+    padding-top: 90px;
+    h2 {
+      margin-bottom: 50px;
+    }
+    .benefits_item {
+      @include flex-box();
+      @include justify-content(space-between);
+      .item {
+        @include flex-basis(29%);
+        border: 1px solid #caeaf5;
+        border-radius: 10px;
+        padding: 50px 15px 40px 15px;
+        .item_title {
+          @include flex-box();
+          @include align-items(center);
+          margin-bottom: 30px;
+          h3 {
+            font-size: 18px;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}

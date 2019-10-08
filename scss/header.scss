@@ -1,0 +1,44 @@
+header {
+  .row {
+    padding: 10px 0;
+    @include flex-box();
+    @include justify-content(space-between);
+    @include align-items(center);
+    .logo {
+      width: 50%;
+    }
+    .main_menu {
+      position: relative;
+      width: 50%;
+      ul {
+        @include flex-box();
+        @include justify-content(space-between);
+        a {
+          font-family: helvetica,sans-serif;
+          font-size: 18px;
+          @include transition(all, .2s);
+          &:hover {
+            color: #4f8dca;
+          }
+        }
+      }
+      label {
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+        @include transition(all, .2s);
+        input {
+          padding: 3px 5px;
+          color: $text_col;
+          &::placeholder {
+            color: $text_col;
+          }
+        }
+      }
+      .search_active {
+        opacity: 1;
+      }
+    }
+  }
+}

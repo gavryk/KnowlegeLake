@@ -9,3 +9,7 @@
 }
 
 @include declare-font('helvetica', 'helveticaNeueCyr/helveticaneuecyr-medium');
+@include declare-font('OpenSans-bold', 'Opensans/opensans-bold');
+@include declare-font('OpenSans-extrabold', 'Opensans/opensans-extrabold');
+@include declare-font('OpenSans-semibold', 'Opensans/opensans-semibold');
+@include declare-font('OpenSans', 'Opensans/opensans-regular');
