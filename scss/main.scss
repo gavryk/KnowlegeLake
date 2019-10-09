@@ -182,6 +182,11 @@
     }
     .video_container {
       height: 320px;
+      img,
+      video,
+      iframe {
+        border-radius: 20px;
+      }
     }
   }
 }
@@ -578,6 +583,11 @@
   width: 100%;
   .row_1140 {
     height: 675px;
+    img,
+    iframe,
+    video {
+      border-radius: 20px;
+    }
   }
 }
 
