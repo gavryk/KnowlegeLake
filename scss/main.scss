@@ -42,19 +42,6 @@
         }
       }
     }
-    a {
-      display: inline-block;
-      color: #fff;
-      font-size: 16px;
-      padding: 15px 30px;
-      background-color: $link_btn-col;
-      border-radius: 5px;
-      font-weight: bold;
-      @include transition(all, .2s);
-      &:hover {
-        opacity: .8;
-      }
-    }
   }
   .largest_projects {
     .projects_items {
@@ -179,53 +166,477 @@
 
 #rpa {
   padding: 130px 0 155px 0;
-  .video_wrapper {
-    .row_1140 {
-      @include flex-box();
-      @include justify-content(space-between);
-      @include align-items(center);
-      .rpa_wrapper {
-         @include flex-basis(50%);
+}
+.video_wrapper {
+  .row_1140 {
+    @include flex-box();
+    @include justify-content(space-between);
+    @include align-items(center);
+    .video_text_wrapper {
+      @include flex-basis(48%);
+    }
+    .text_container {
+      h2 {
+        text-align: left;
       }
-      .rpa_text {
-        h2 {
-          text-align: left;
-        }
-        p {
-          padding-right: 25px;
-        }
-      }
-      .rpa_video {
-        img {
-          width: 100%;
-          height: 100%;
+    }
+    .video_container {
+      height: 320px;
+    }
+  }
+}
+
+.benefits_wrapper, .automation_spotlight {
+  padding-top: 90px;
+  h2 {
+    margin-bottom: 50px;
+  }
+  .benefits_item, .spotlight_items {
+    @include flex-box();
+    @include justify-content(space-between);
+    .item {
+      @include flex-basis(30%);
+      border: 1px solid #caeaf5;
+      border-radius: 10px;
+      padding: 50px 10px 40px 10px;
+      .item_title {
+        @include flex-box();
+        @include align-items(center);
+        margin-bottom: 30px;
+        h3 {
+          font-size: 18px;
+          margin-left: 15px;
         }
       }
     }
   }
-  .benefits_wrapper {
-    padding-top: 90px;
-    h2 {
-      margin-bottom: 50px;
+}
+
+//----------------------------------------------------------------------------------------
+/*                               WORKFLOW STYLE                          */
+//----------------------------------------------------------------------------------------
+
+#workflow {
+  background-color: #ebfaff;
+  padding: 95px 0 175px 0;
+  .bots_title {
+    text-align: center;
+    margin-bottom: 45px;
+    span {
+      color: #7d7d7d;
     }
-    .benefits_item {
+  }
+  .tools_bot {
+    position: relative;
+    h3 {
+      text-align: center;
+      font-size: 19px;
+      margin-bottom: 40px;
+    }
+    .tools {
       @include flex-box();
+      @include align-items(center);
       @include justify-content(space-between);
+      @include flex-wrap(wrap);
+      text-align: center;
+      position: absolute;
       .item {
-        @include flex-basis(29%);
-        border: 1px solid #caeaf5;
+        @include flex-basis(18%);
+        box-shadow: 0 5px 25px 1px #83b9eb;
+        background-color: #fff;
+        height: 250px;
         border-radius: 10px;
-        padding: 50px 15px 40px 15px;
-        .item_title {
-          @include flex-box();
-          @include align-items(center);
+        padding: 35px 30px 0 30px;
+        img {
           margin-bottom: 30px;
-          h3 {
-            font-size: 18px;
-            margin-left: 40px;
+        }
+        h3 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+.bots_items,
+.option_items,
+.benefits_ap_items{
+  @include flex-box();
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+  margin-bottom: 85px;
+  .item {
+    @include flex-basis(42%);
+    box-shadow: 0 5px 25px 1px #83b9eb;
+    padding: 50px 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    .bot-item_title,
+    .option-item_title,
+    .benefits-item_title {
+      @include flex-box();
+      @include justify-content(center);
+      @include align-items(center);
+      margin-bottom: 40px;
+      h3 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+//================================================================================================
+/*                                       TOOL FOR JOB                                            */
+//================================================================================================
+
+#tool_for-job {
+  padding: 280px 0 115px 0;
+  .right_tool {
+    @include flex-box();
+    @include justify-content(space-between);
+    .tool_text,
+    .tool_img {
+      @include flex-basis(47%);
+      h2 {
+        text-align: left;
+      }
+      p {
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .spotlight_items {
+    .item {
+      .item_title {
+        @include justify-content(center);
+      }
+      ul {
+        li {
+          margin-bottom: 20px;
+          margin-left: 19px;
+          position: relative;
+          &:after {
+            position: absolute;
+            font-family: "Font Awesome 5 Free", sans-serif;
+            content: '\f111';
+            font-size: 4px;
+            background-color: #00c3bb;
+            border-radius: 50%;
+            left: -10px;
+            top: 9px;
+          }
+          &:last-child {
+            margin-bottom: 0;
           }
         }
       }
+    }
+  }
+}
+
+//================================================================================================
+/*                                content_service                           */
+//================================================================================================
+
+#content_service {
+  padding: 140px 0 80px 0;
+  .video_wrapper {
+    .text_container {
+      p {
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 35px;
+        }
+      }
+    }
+    .video_container {
+      @include align-self(baseline);
+    }
+  }
+}
+
+//================================================================================================
+/*                                OPTIONS SECTION                           */
+//================================================================================================
+
+#options {
+  padding-bottom: 360px;
+}
+.options_wrapper {
+  background-color: #ebfaff;
+  padding: 60px 0 240px 0;
+  .row_1140 {
+    position: relative;
+    .option_title {
+      text-align: center;
+      span {
+        color: #7d7d7d;
+      }
+      .title_icons {
+        margin-bottom: 40px;
+      }
+    }
+    .option_items {
+      position: absolute;
+      top: 285px;
+      .item {
+        .option_descr {
+          text-align: left;
+          p {
+            margin-bottom: 25px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//================================================================================================
+/*                                POWERFUL SECTION                           */
+//================================================================================================
+
+#powerful_content {
+  background-color: #ebfaff;
+  padding: 95px 0 80px 0;
+  .row {
+    @include flex-box();
+    @include justify-content(space-around);
+    @include align-items(center);
+    .powerful_img {
+      text-align: center;
+    }
+    .powerful_text {
+      h2 {
+        text-align: left;
+      }
+      p {
+        margin-bottom: 35px;
+      }
+      .powerful_link {
+        h3 {
+          font-size: 22px;
+          font-weight: 700;
+        }
+        a {
+          margin-left: 20px;
+        }
+        @include flex-box();
+      }
+    }
+    .powerful_img,
+    .powerful_text {
+      @include flex-basis(46%);
+    }
+  }
+}
+
+//================================================================================================
+/*                                CAsE STUDIES SECTION                           */
+//================================================================================================
+
+#studies_case {
+  padding: 70px 0;
+  .row {
+    @include flex-box();
+    @include justify-content(space-around);
+    @include align-items(center);
+    .case_icon {
+      @include flex-basis(25%);
+      text-align: right;
+    }
+    .case_text {
+      @include flex-basis(52%);
+      h2 {
+        text-align: left;
+      }
+      p {
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+//================================================================================================
+/*                                ACCOUNT PAYABLE PAGE                          */
+//================================================================================================
+
+
+#ap_challenge {
+  padding: 90px 0 80px 0;
+  .row_1140 {
+    @include flex-box();
+    @include justify-content(space-between);
+    @include align-items(center);
+    .ap_wrapper {
+      @include flex-basis(50%)
+    }
+    .ap_text {
+      h2 {
+        text-align: left;
+      }
+    }
+    .ap_img {
+      text-align: right;
+    }
+  }
+}
+#account_benefits {
+  padding: 90px 0 290px 0;
+  background-color: #ebfaff;
+  .benefits_ap {
+    position: relative;
+    .benefits_ap_items {
+      position: absolute;
+      top: 150px;
+      .item {
+        .benefits_descr {
+          text-align: left;
+        }
+        .benefits-item_title {
+          h3 {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+#discover_benefits {
+  padding: 210px 0 140px 0;
+  .row_1140 {
+    @include flex-box();
+    @include justify-content(space-between);
+  }
+  .quote_wrapper {
+    width: 35%;
+    .quote_title {
+      margin-bottom: 40px;
+      h2 {
+        text-align: left;
+      }
+    }
+    .quote {
+      p {
+        color: $main_col;
+        font-style: italic;
+      }
+      margin-bottom: 20px;
+    }
+    .author {
+      @include flex-box();
+      @include align-items(center);
+      @include justify-content(space-between);
+      margin-bottom: 35px;
+      .author_name {
+        text-align: right;
+        color: #7d7d7d;
+        h3 {
+          color: #2b2b2b;
+        }
+      }
+    }
+    .case_link {
+      text-align: right;
+      .link_btn {
+        padding: 15px 35px;
+      }
+    }
+  }
+  .wyz_items {
+    width: 62%;
+    margin-bottom: 135px;
+    .item {
+      padding: 20px 30px 30px 20px;
+      border: 1px solid #caeaf5;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      .wyz-item_title {
+        @include flex-box();
+        @include align-items(center);
+        h3 {
+          margin-left: 20px;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.discover_befits_video {
+  width: 100%;
+  .row_1140 {
+    height: 675px;
+  }
+}
+
+//================================================================================================
+/*                                What You Can Do SECTION                          */
+//================================================================================================
+
+#what_you_can_do {
+  padding: 95px 0;
+  background-color: #ebfaff;
+  .row_1140 {
+    @include flex-box();
+    @include justify-content(space-between);
+    @include align-items(center);
+  }
+  .wycd_img,
+  .wycd_text {
+    color: #7d7d7d;
+    h2 {
+      color: $main_col;
+      text-align: left;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-bottom: 70px;
+      li {
+        position: relative;
+        margin-bottom: 25px;
+        margin-left: 15px;
+        &:after {
+          position: absolute;
+          font-family: "Font Awesome 5 Free", sans-serif;
+          content: '\f111';
+          font-size: 4px;
+          background-color: #7d7d7d;
+          border-radius: 50%;
+          left: -10px;
+          top: 9px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    @include flex-basis(50%);
+  }
+  .wycd_link {
+    @include flex-box();
+    @include justify-content(space-between);
+    @include align-items(center);
+    h3 {
+      font-size: 19px;
+      color: $main_col;
+    }
+    .link_btn {
+      @include justify-content(space-between);
+      @include flex-basis(26%);
     }
   }
 }
