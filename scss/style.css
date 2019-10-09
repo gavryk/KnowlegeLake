@@ -558,6 +558,22 @@ header .row {
           font-size: 18px;
           margin-left: 15px; }
 
+.spotlight_items .item .item_text ul li {
+  position: relative;
+  margin-bottom: 25px;
+  margin-left: 15px; }
+  .spotlight_items .item .item_text ul li:after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free", sans-serif;
+    content: '\f111';
+    font-size: 4px;
+    background-color: #7d7d7d;
+    border-radius: 50%;
+    left: -10px;
+    top: 9px; }
+  .spotlight_items .item .item_text ul li:last-child {
+    margin-bottom: 0; }
+
 /*                               WORKFLOW STYLE                          */
 #workflow {
   background-color: #ebfaff;
