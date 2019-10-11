@@ -979,35 +979,56 @@ header .row {
       background-color: #fff;
       padding: 50px 35px 40px 35px;
       border-radius: 10px; }
-      #platforms .platforms_item .item img {
-        margin-bottom: 30px; }
-      #platforms .platforms_item .item h3 {
-        margin-bottom: 45px; }
-      #platforms .platforms_item .item p {
-        font-size: 14px;
-        margin-bottom: 55px; }
-      #platforms .platforms_item .item a {
-        display: inline-flex;
-        width: 90%;
-        -webkit-justify-content: center;
-        -moz-justify-content: center;
-        -ms-justify-content: center;
-        justify-content: center;
-        -ms-flex-pack: center;
-        padding: 15px;
-        background-color: #ffc000;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-        border-radius: 10px;
-        -webkit-transition: all 0.2s ease-out;
-        -khtml-transition: all 0.2s ease-out;
-        -moz-transition: all 0.2s ease-out;
-        -ms-transition: all 0.2s ease-out;
-        -o-transition: all 0.2s ease-out;
-        transition: all 0.2s ease-out; }
-        #platforms .platforms_item .item a:hover {
-          opacity: .8; }
+      #platforms .platforms_item .item .wyz {
+        height: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: space-between; }
+        #platforms .platforms_item .item .wyz img {
+          margin-bottom: 30px; }
+        #platforms .platforms_item .item .wyz h3 {
+          margin-bottom: 45px; }
+        #platforms .platforms_item .item .wyz p {
+          font-size: 14px;
+          margin-bottom: 55px; }
+        #platforms .platforms_item .item .wyz a {
+          display: inline-flex;
+          width: 70%;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          -ms-justify-content: center;
+          justify-content: center;
+          -ms-flex-pack: center;
+          padding: 15px;
+          background-color: #ffc000;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 10px;
+          -webkit-transition: all 0.2s ease-out;
+          -khtml-transition: all 0.2s ease-out;
+          -moz-transition: all 0.2s ease-out;
+          -ms-transition: all 0.2s ease-out;
+          -o-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out; }
+          #platforms .platforms_item .item .wyz a:hover {
+            opacity: .8; }
 
 /*                         ROBOTIC PROCESSES AUTOMATION                                */
 #rpa {

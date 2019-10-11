@@ -130,29 +130,36 @@
       background-color: #fff;
       padding: 50px 35px 40px 35px;
       border-radius: 10px;
-      img {
-        margin-bottom: 30px;
-      }
-      h3 {
-        margin-bottom: 45px;
-      }
-      p {
-        font-size: 14px;
-        margin-bottom: 55px;
-      }
-      a {
-        display: inline-flex;
-        width: 90%;
-        @include justify-content(center);
-        padding: 15px;
-        background-color: $form_btn-col;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-        border-radius: 10px;
-        @include transition(all, .2s);
-        &:hover {
-          opacity: .8;
+      .wyz {
+        height: 100%;
+        @include flex-box();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(space-between);
+        img {
+          margin-bottom: 30px;
+        }
+        h3 {
+          margin-bottom: 45px;
+        }
+        p {
+          font-size: 14px;
+          margin-bottom: 55px;
+        }
+        a {
+          display: inline-flex;
+          width: 70%;
+          @include justify-content(center);
+          padding: 15px;
+          background-color: $form_btn-col;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 10px;
+          @include transition(all, .2s);
+          &:hover {
+            opacity: .8;
+          }
         }
       }
     }
