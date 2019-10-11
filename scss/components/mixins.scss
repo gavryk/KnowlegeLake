@@ -27,6 +27,7 @@ $value) {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+
 }
 @mixin flex-direction($direction) {
   -webkit-flex-direction: $direction;

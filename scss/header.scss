@@ -5,11 +5,15 @@ header {
     @include justify-content(space-between);
     @include align-items(center);
     .logo {
-      width: 50%;
+      position: relative;
+      z-index: 5;
+      width: 30%;
     }
     .main_menu {
       position: relative;
       width: 50%;
+      @include transition(all, .4s);
+    ;
       ul {
         @include flex-box();
         @include justify-content(space-between);
@@ -38,6 +42,65 @@ header {
       }
       .search_active {
         opacity: 1;
+      }
+    }
+    div.menu_active {
+      height: 350px;
+      ul {
+        @include transform(translateY(0));
+      }
+    }
+    div.burger_active {
+      bottom: -30px;
+      z-index: 6;
+      span {
+        @include transform(translateY(5px) rotate(45deg));
+        &:before {
+          @include transform(rotate(90deg) translate(-5px, 0px));
+        }
+        &:after {
+          opacity: 0;
+        }
+      }
+    }
+    .burger {
+      display: block;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      cursor: pointer;
+      outline: none;
+      z-index: 3;
+      @include transition(all, .4s);
+      span {
+        background-color: #000;
+        width: 100%;
+        height: 2px;
+        display: block;
+        left: 0;
+        bottom: 5px;
+        transform-origin: right;
+        top: 12px;
+        position: absolute;
+        @include transform(translateY(5px));
+        &:after,
+        &:before {
+          content: '';
+          display: block;
+          background-color: #000;
+          width: 100%;
+          height: 2px;
+          position: absolute;
+        }
+        &:after {
+          top: -5px;
+          transform-origin: right;
+        }
+        &:before {
+          bottom: -5px;
+        }
       }
     }
   }
