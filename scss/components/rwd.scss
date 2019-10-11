@@ -102,7 +102,6 @@
 @media (max-width: 768px) {
   header {
     .row {
-      position: relative;
       div.main_menu {
         overflow: hidden;
         position: absolute;
@@ -129,14 +128,41 @@
           right: 35%;
         }
       }
+      div.burger {
+        display: block;
+      }
     }
   }
   #banner {
+    background: #89c1ee !important;
     .main_title {
       width: 100%;
     }
     .main_form {
       margin: 15px auto;
+      height: 55px;
+      @include transition(all, .2s);
+      form {
+        opacity: 0;
+        @include transition(all, .2s);
+      }
+      i {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 48%;
+        cursor: pointer;
+        @include transition(all, .2s);
+      }
+    }
+    .form_active {
+      height: 100%;
+      form {
+        opacity: 1;
+      }
+      i {
+        @include transform(rotate(-180deg));
+      }
     }
   }
   #migration_decr {
@@ -203,8 +229,9 @@
     .bots {
       .tools_bot {
         .tools {
+          @include justify-content(center);
           .item {
-            @include flex-basis(40%);
+            @include flex-basis(60%);
           }
         }
       }
@@ -249,6 +276,200 @@
       .wyz_items {
         width: 100%;
         margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  header {
+    div.row {
+      .main_menu {
+        top: 55px;
+      }
+    }
+  }
+  #migration_decr {
+    .row {
+      .about_asking {
+        padding: 55px 0;
+        width: 100%;
+      }
+    }
+  }
+  #workflow {
+    .bots {
+      .tools_bot {
+        .tools {
+          @include justify-content(center);
+        }
+      }
+    }
+  }
+  #options {
+    .options_wrapper {
+      .option_items {
+        .item {
+          @include flex-basis(75%);
+          padding: 50px 20px;
+        }
+      }
+    }
+  }
+  #advantages {
+    .row_1290 {
+      .advantage_items {
+        .item {
+          @include flex-basis(70%);
+          padding: 50px 25px;
+        }
+      }
+    }
+  }
+  #ap_challenge {
+    div.row_1140 {
+      .ap_wrapper {
+        @include flex-basis(100%);
+      }
+      .ap_img {
+        text-align: center;
+      }
+    }
+  }
+  section#account_benefits {
+    padding: 90px 0 90px 0;
+    .benefits_ap {
+      .benefits_ap_items {
+        .item {
+          @include flex-basis(75%);
+          padding: 50px 20px;
+        }
+      }
+    }
+  }
+  #discover_benefits {
+    .discover_befits_video {
+      height: 50%;
+      .row_1140 {
+        height: 100%;
+      }
+    }
+  }
+  #what_you_can_do {
+    .row_1140 {
+      .wycd_text {
+        .wycd_link {
+          @include flex-direction(column);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #platforms {
+    .row {
+      .platforms_item {
+        @include justify-content(center);
+        .item {
+          @include flex-basis(75%);
+        }
+      }
+    }
+  }
+  #migration_decr {
+    .largest_projects {
+      .row_1290 {
+        .projects_items {
+          .item {
+            @include flex-basis(85%);
+          }
+        }
+      }
+    }
+  }
+  #rpa, #tool_for-job {
+    .benefits_wrapper, .automation_spotlight {
+      .benefits_item, .spotlight_items {
+        @include justify-content(center);
+        div.item {
+          margin-bottom: 20px;
+          @include flex-basis(75%);
+        }
+      }
+    }
+  }
+  #powerful_content {
+    .row {
+      .powerful_text {
+        div.powerful_link {
+          @include flex-direction(column);
+          @include align-items(center);
+          h3 {
+            margin-bottom: 15px;
+          }
+          a.link_btn {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  #studies_case {
+    div.row {
+      .case_icon {
+        @include flex-basis(50%);
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .case_text {
+        @include flex-basis(100%);
+      }
+    }
+  }
+  #workflow {
+    .bots {
+      .bots_items {
+        .item {
+          @include flex-basis(80%);
+          padding: 50px 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  #migration_decr {
+
+    .largest_projects {
+      div.row_1290 {
+        .projects_items {
+          div.item {
+            @include flex-basis(100%);
+            padding: 28px 5px 0 5px;
+          }
+        }
+      }
+    }
+  }
+  #options {
+    .options_wrapper {
+      .option_items {
+        .item {
+          @include flex-basis(100%);
+          padding: 50px 5px;
+        }
+      }
+    }
+  }
+  #advantages {
+    .row_1290 {
+      .advantage_items {
+        .item {
+          @include flex-basis(100%);
+          padding: 50px 5px;
+        }
       }
     }
   }

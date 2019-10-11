@@ -300,7 +300,7 @@
     box-shadow: 0 5px 25px 1px #83b9eb;
     padding: 50px 40px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     background-color: #fff;
     .bot-item_title,
     .option-item_title,
@@ -480,6 +480,7 @@
     @include flex-box();
     @include justify-content(space-around);
     @include align-items(center);
+    @include flex-wrap(wrap);
     .case_icon {
       @include flex-basis(25%);
       text-align: right;
@@ -510,12 +511,16 @@
     @include flex-box();
     @include justify-content(space-between);
     @include align-items(center);
+    @include flex-wrap(wrap);
     .ap_wrapper {
       @include flex-basis(50%)
     }
     .ap_text {
       h2 {
         text-align: left;
+      }
+      p {
+        font-family: OpenSans, sans-serif;
       }
     }
     .ap_img {
@@ -535,6 +540,12 @@
       .item {
         .benefits_descr {
           text-align: left;
+          p {
+            span {
+              font-weight: 600;
+              color: $main_col;
+            }
+          }
         }
         .benefits-item_title {
           h3 {
@@ -680,3 +691,8 @@
     }
   }
 }
+
+//================================================================================================
+/*                                What You Can Do SECTION    TEST                      */
+//================================================================================================
+

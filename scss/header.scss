@@ -4,6 +4,7 @@ header {
     @include flex-box();
     @include justify-content(space-between);
     @include align-items(center);
+    position: relative;
     .logo {
       position: relative;
       z-index: 5;
@@ -64,7 +65,7 @@ header {
       }
     }
     .burger {
-      display: block;
+      display: none;
       width: 25px;
       height: 25px;
       position: absolute;
